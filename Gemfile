@@ -47,6 +47,6 @@ group :test, :development do
   gem 'teaspoon'
 end
 
-group :assets, :development do
+group :assets, :development, :test do
   gem 'backbone-on-rails'
 end
