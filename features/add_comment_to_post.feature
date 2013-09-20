@@ -5,8 +5,8 @@ Feature: Add comment to post
 
   Background:
     Given the following post:
-      | title                         | body        |
-      | Let me tell you about Spandex | Lorem ipsum |
+      | title | Let me tell you about Spandex |
+      | body  | Lorem ipsum                   |
 
   Scenario: Adding a comment
     Given I am on the home page
