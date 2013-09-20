@@ -23,7 +23,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'coffee-rails-source-maps'
   gem 'cucumber', '>= 1.3.0'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', :require => false, git: 'https://github.com/cucumber/cucumber-rails.git'
   gem 'pry-debugger'
   gem 'quiet_assets'
   gem 'rspec-rails', '~> 2.0'
@@ -34,7 +34,7 @@ end
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', :require => false, git: 'https://github.com/cucumber/cucumber-rails.git'
   gem 'database_cleaner'
   gem 'shoulda'
 end
