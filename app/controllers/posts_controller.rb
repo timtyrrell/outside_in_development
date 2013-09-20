@@ -4,11 +4,17 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new params[:post]
+    @post = Post.new post_params
     if @post.save
       redirect_to posts_path(@post), :notice => "New post created"
     else
       render :new
     end
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :body)
   end
 end
