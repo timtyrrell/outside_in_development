@@ -43,7 +43,6 @@ group :test, :development do
   gem 'pry-debugger'
   gem 'rspec'
   gem 'rspec-rails', '~> 2.0'
-  gem 'parallel_tests'
   gem 'teaspoon'
 end
 
