@@ -11,7 +11,6 @@ Feature: Add comment to post
   Scenario: Adding a comment
     Given I am on the home page
     When I follow "Let me tell you about Spandex"
-    Then I should be on that post's page
     And I fill in "Retort" with "BEST. POST. EVA."
     And I press "Add Comment"
     Then I should see "BEST. POST. EVA."
