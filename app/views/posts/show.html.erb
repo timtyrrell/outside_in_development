@@ -3,7 +3,7 @@
 <%= @post.title %>
 <%= @post.body %>
 
-<%= form_for @post.build_comment do |f| %>
+<%= form_for @post.comments.build do |f| %>
   <%= f.label :retort %>
   <%= f.text_field :retort %>
 <% end %>
