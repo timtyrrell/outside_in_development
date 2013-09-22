@@ -3,7 +3,8 @@
 <%= @post.title %>
 <%= @post.body %>
 
-<%= form_for @post.comments.build do |f| %>
+<%= form_for [@post, @post.comments.build] do |f| %>
   <%= f.label :retort %>
   <%= f.text_field :retort %>
+  <%= f.button "Add Comment" %>
 <% end %>
