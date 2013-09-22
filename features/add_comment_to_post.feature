@@ -8,6 +8,7 @@ Feature: Add comment to post
       | title | Let me tell you about Spandex |
       | body  | Lorem ipsum                   |
 
+  @javascript
   Scenario: Adding a comment
     Given I am on the home page
     When I follow "Let me tell you about Spandex"
