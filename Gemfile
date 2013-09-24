@@ -34,6 +34,7 @@ group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require => false, git: 'https://github.com/cucumber/cucumber-rails.git'
   gem 'database_cleaner'
+  gem 'shoulda'
 end
 
 group :test, :development do
