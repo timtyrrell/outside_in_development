@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/cucumber/cucumber-rails.git
+  revision: 92fc3e9242885e9616ef6051812ed075890c8c85
+  specs:
+    cucumber-rails (1.4.0)
+      capybara (>= 1.1.2, < 3)
+      cucumber (>= 1.3.8, < 2)
+      nokogiri (~> 1.5)
+      rails (>= 3, < 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,11 +37,6 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
-    backbone-on-rails (1.0.0.1)
-      eco
-      ejs
-      jquery-rails
-      rails (>= 3.1)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
@@ -41,16 +46,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (1.0.0)
-      capybara (~> 2.0, >= 2.0.2)
-      json
-    cliver (0.2.1)
     coderay (1.0.9)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
-    coffee-rails-source-maps (1.3.6)
-      coffee-script-source (>= 1.6.1)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -62,11 +61,6 @@ GEM
       gherkin (~> 2.12.1)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.0.2)
-    cucumber-rails (1.4.0)
-      capybara (>= 1.1.2)
-      cucumber (>= 1.2.0)
-      nokogiri (>= 1.5.0)
-      rails (>= 3.0.0)
     daemons (1.1.9)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
@@ -77,12 +71,6 @@ GEM
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
     diff-lcs (1.2.4)
-    eco (1.0.0)
-      coffee-script
-      eco-source
-      execjs
-    eco-source (1.1.0.rc.1)
-    ejs (1.1.1)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.1)
@@ -106,16 +94,6 @@ GEM
     multi_test (0.0.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
-    parallel (0.8.2)
-    parallel_tests (0.15.4)
-      parallel
-    phantomjs (1.8.1.1)
-      poltergeist
-    poltergeist (1.4.1)
-      capybara (~> 2.1.0)
-      cliver (~> 0.2.1)
-      multi_json (~> 1.0)
-      websocket-driver (>= 0.2.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -172,12 +150,6 @@ GEM
       rdoc (~> 3.10)
     sextant (0.2.4)
       rails (>= 3.2)
-    shoulda (3.5.0)
-      shoulda-context (~> 1.0, >= 1.0.1)
-      shoulda-matchers (>= 1.4.1, < 3.0)
-    shoulda-context (1.1.5)
-    shoulda-matchers (2.3.0)
-      activesupport (>= 3.0.0)
     slop (3.4.6)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -189,9 +161,6 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     sqlite3 (1.3.8)
-    teaspoon (0.7.6)
-      phantomjs (>= 1.8.1.1)
-      railties (>= 3.2.5, < 5)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -207,7 +176,6 @@ GEM
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    websocket-driver (0.3.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -215,18 +183,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  backbone-on-rails
   binding_of_caller
   capybara
-  capybara-webkit
   coffee-rails (~> 4.0.0)
-  coffee-rails-source-maps
   cucumber (>= 1.3.0)
-  cucumber-rails
+  cucumber-rails!
   database_cleaner
   fabrication
   jquery-rails
-  parallel_tests
   pry-debugger
   pry-rails
   quiet_assets
@@ -236,8 +200,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   sextant
-  shoulda
   sqlite3
-  teaspoon
   thin
   uglifier (>= 1.3.0)
