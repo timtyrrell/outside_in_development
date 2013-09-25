@@ -1,0 +1,13 @@
+<%= flash[:notice] if flash[:notice] %>
+
+<%= @post.title %>
+
+<% @post.comments.each do |comment| %>
+  <%= comment.retort %>
+<% end %>
+
+<%= form_for [@post, Comment.new] do |f| %>
+	<%= f.label :retort %>
+	<%= f.text_field :retort %>
+	<%= f.submit "Create comment" %>
+<% end %>
